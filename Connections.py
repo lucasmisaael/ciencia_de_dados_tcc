@@ -2,19 +2,15 @@ import psycopg2
 import pandas as pd
 
 class Connections: 
-    
-    @staticmethod
-    def teste():
-        print("oi")
 
     @staticmethod
     def connect():
         conn = psycopg2.connect(
-            host= "localhost",
-            database= "postgres",
-            user= "postgres",
-            password= "postgres",
-            port= "5432")
+            host= "",
+            database= "",
+            user= "",
+            password= "",
+            port= "")
         conn.set_session( autocommit=True)
    
         return conn
